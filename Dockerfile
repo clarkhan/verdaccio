@@ -14,7 +14,7 @@ ADD . $APPDIR
 
 ENV NODE_ENV=production
 
-RUN npm config set registry http://registry.npmjs.org/ && \
+RUN npm config set registry http://registry.npm.taobao.org/ && \
     npm install -g -s --no-progress yarn --pure-lockfile && \
     yarn install --production=false && \
     yarn run build:webui && \
