@@ -130,7 +130,7 @@
     "coverage:publish": "nyc report --reporter=lcov | codecov",
     "lint": "eslint .",
     "lint:css": "stylelint 'src/**/*.scss' --syntax scss",
-    "pre:webpack": "npm run lint && rimraf static/*",
+    "pre:webpack": "rimraf static/*",
     "dev:webui": "babel-node tools/dev.server.js",
     "build:webui": "npm run pre:webpack && webpack --config tools/webpack.prod.config.babel.js",
     "build:docker": "docker build -t verdaccio . --no-cache",
